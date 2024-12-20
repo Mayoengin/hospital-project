@@ -1,0 +1,10 @@
+pip==23.2.1
+pandas==1.5.3
+joblib
+numpy
+scikit-learn	
+xlwt
+openpyxl
+statsmodels
+flask
+

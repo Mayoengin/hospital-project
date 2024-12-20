@@ -1,0 +1,24 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARIMA Prediction Result</title>
+</head>
+<body>
+	{% if predictions %}
+		<h1>Prediction Result for Patient {{ predictions[0]['Patient_ID'] }}</h1>
+		<table>
+			<tr>
+				<th>Patient ID</th>
+				<th>Predicted Gewicht</th>
+			</tr>
+			<tr>
+				<td>{{ predictions[0]['Patient_ID'] }}</td>
+				<td>{{ predictions[0]['Predicted_Gewicht'] }}</td>
+			</tr>
+		</table>
+	{% else %}
+		<h1>Error: Patient ID not found</h1>
+	{% endif %}
+</body>
+</html>

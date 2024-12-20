@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Predict</title>
+</head>
+<body>
+    <h1>Auto Predict</h1>
+	<form method="post" enctype="multipart/form-data">
+		<label for="Patient_ID">Enter Patient ID:</label>
+		<input type="text" id="Patient_ID" name="Patient_ID">
+		<label for="arima_option">Select ARIMA option:</label>
+		<select id="arima_option" name="arima_option" style="width: 50px;"> <!-- Adjust the width as needed -->
+			<option value="1">T1</option>
+			<option value="2">T2</option>
+			<option value="3">T3</option>
+		</select>
+		<br>
+		<br>
+		<button type="submit">Predict</button>
+	</form>
+</body>
+</html>
